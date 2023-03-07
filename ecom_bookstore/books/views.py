@@ -26,3 +26,4 @@ def PaymentComplete(request):
     product=Book.objects.get(id=body['productId'])
     Order.objects.create(product=product)
     return JsonResponse('payment completed',safe=False)
+
