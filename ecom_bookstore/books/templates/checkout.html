@@ -64,7 +64,7 @@
 		var productId = '{{object.id}}'
 
 		function completeOrder() {
-			var url = ""
+			var url = "{% url 'complete' %}"
 
 			fetch(url, {
 				method: 'POST',

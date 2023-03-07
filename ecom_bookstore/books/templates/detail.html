@@ -19,7 +19,7 @@
         <p class="card-text">{{object.description}}</p>
     </div>
 {% if object.book_available is True %}
-<a href="" class="btn btn-outline-success" role="button">Buy Now</a>
+<a href="{% url 'checkout' object.id %}" class="btn btn-outline-success" role="button">Buy Now</a>
 {% else %}
 <h4 class="text-danger">Out of Stock...!</h4>
 {% endif %}
